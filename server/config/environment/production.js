@@ -19,6 +19,6 @@ module.exports = {
           process.env.MONGOHQ_URL ||
           process.env.OPENSHIFT_MONGODB_DB_URL +
           process.env.OPENSHIFT_APP_NAME ||
-          'mongodb://localhost/raincubeheroku'
+          'mongodb://heroku_rhh4twnf:44gl5qein536rs5dmrc1a09u8a@ds025449.mlab.com:25449/heroku_rhh4twnf'
   }
 };
