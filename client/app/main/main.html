@@ -1,0 +1,60 @@
+<div class="container">
+  <section class="row">
+    <div class="col-xs-12">
+      <h2 class="page-header">Device Information</h2>
+    </div>
+    <div class="col-xs-6">
+      <h5><b>Home: </b>Lebrons</h5>
+    </div>
+    <div class="col-xs-6">
+      <h5><b>Device ID: </b> 661</h5>
+    </div>
+    <div class="col-xs-6">
+      <h5><b>Zip Code: </b> 33138</h5>
+    </div>
+  </section>
+  <section class="row status">
+    <div class="col-xs-12">
+      <h2 class="page-header">Device Status</h2>
+    </div>
+    <iframe class="initialStateEmbed" src="https://app.initialstate.com/embed/#/tiles/1hIiWJPyb1TQG0qajQmzWvKgBL9cSECb"></iframe>
+  </section>
+  <section class="row" style="display:none;">
+    <div class="col-xs-12">
+      <h2 class="page-header">Levels</h2>
+    </div>
+    <div class="col-xs-6">
+      <h5><b>Water Level: </b>1.0 inches</h5>
+    </div>
+    <div class="col-xs-6">
+      <h5><b>Rainfall Last 24 Hours: </b>1.0 inches</h5>
+    </div>
+    <div class="col-xs-6">
+      <h5><b>Rainfall Next 24 Hours: </b>1.0 inches</h5>
+    </div>
+    <div class="col-xs-6">
+      <h5><b>Next Watering Time: </b>00:00</h5>
+    </div>
+    <div class="col-xs-6">
+      <h5><b>Last Watering Time: </b>00:00</h5>
+    </div>
+  </section>
+  <div class="row" style="display:none;">
+    <div class="col-lg-12">
+      <h1 class="page-header">Features:</h1>
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in $ctrl.awesomeThings">
+        <li><a href="#" uib-tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="$ctrl.deleteThing(thing)">&times;</button></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <form class="thing-form" style="display:none;">
+    <label>Syncs in realtime across clients</label>
+    <p class="input-group">
+      <input type="text" class="form-control" placeholder="Add a new thing here." ng-model="$ctrl.newThing">
+      <span class="input-group-btn">
+        <button type="submit" class="btn btn-primary" ng-click="$ctrl.addThing()">Add New</button>
+      </span>
+    </p>
+  </form>
+</div>
